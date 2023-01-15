@@ -10,8 +10,10 @@ function loader(element){
   element.textContent = '';
 
   loadInterval = setInterval(() => {
+    if(element.textContent === ' '){
+      element.textContent = '.';
+    }
     element.textContent += '.';
-
     if (element.textContent === '....'){
       element.textContent = ' ';
     }
