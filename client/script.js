@@ -15,7 +15,7 @@ function loader(element){
     if (element.textContent === '....'){
       element.textContent = '.';
     }
-  }, 300)
+  }, 500)
 }
 
 function typeText(element, text){
