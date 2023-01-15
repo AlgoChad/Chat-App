@@ -92,8 +92,8 @@ const handleSubmit = async (e)  => {
     const data = await response.json();
     const parsedData = data.bot.trim();
 
-
     typeText(messageDiv, parsedData);
+    window.scrollTo(0, document.body.scrollHeight);
   } else {
     const err = await response.text();
     messageDiv.innerHTML = 'Something went wrong :<'
