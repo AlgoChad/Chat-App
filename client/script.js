@@ -1,5 +1,6 @@
 import bot from './assets/bot.svg';
 import user from './assets/user.svg';
+import ReactScrollableFeed from 'react-scrollable-feed';
 
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
@@ -93,7 +94,7 @@ const handleSubmit = async (e)  => {
     const parsedData = data.bot.trim();
 
     typeText(messageDiv, parsedData);
-    window.scrollTo(0, document.body.scrollHeight);
+    
   } else {
     const err = await response.text();
     messageDiv.innerHTML = 'Something went wrong :<'
