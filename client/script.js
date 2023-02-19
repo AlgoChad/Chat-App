@@ -69,7 +69,7 @@ const handleSubmit = async (e)  => {
 
   //bot
   const uniqueId = generateUniqueId();
-  chatContainer.innerHTML += chatStripe(true, "", uniqueId);
+  chatContainer.innerHTML += chatStripe(true, " ", uniqueId);
 
   chatContainer.scrollTop = chatContainer.scrollHeight;
 
@@ -88,7 +88,7 @@ const handleSubmit = async (e)  => {
     })
   })
   clearInterval(loadInterval);
-  messageDiv.innerHTML = ' ';
+  messageDiv.innerHTML = '';
   if (response.ok){
     const data = await response.json();
     const parsedData = data.bot.trim();
