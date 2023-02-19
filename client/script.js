@@ -69,7 +69,7 @@ const handleSubmit = async (e)  => {
 
   //bot
   const uniqueId = generateUniqueId();
-  chatContainer.innerHTML += chatStripe(true, " ", uniqueId);
+  chatContainer.innerHTML += chatStripe(true, "", uniqueId);
 
   chatContainer.scrollTop = chatContainer.scrollHeight;
 
